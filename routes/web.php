@@ -27,6 +27,4 @@ Route::get('/', [WelcomeController::class, 'index']);
 
 Route::post('/submit-form', [FormController::class, 'store'])->name('submit-form');
 
-// Registration route should use GET method
-// Route::get('/register', [FormController::class, 'showRegistrationForm'])->name('register');
 Route::get('/register', [FormController::class, 'register'])->name('register');

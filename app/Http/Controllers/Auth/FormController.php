@@ -12,7 +12,6 @@ class FormController extends Controller
     public function store(Request $request)
     {
         
-        // Validate the form data, including email and password for user registration
         $validatedData = $request->validate([
             'nama' => 'required|string',
             'jumlah_tamu' => 'required|integer',
@@ -24,20 +23,12 @@ class FormController extends Controller
             'keterangan' => 'required|string',
         ]);
 
-        // Create a new FormData instance and save it to the database
-        // FormData::create($validatedData);
-
-        // You can add logic here to handle user registration using the FormData model
-        // For example, you might hash the password and save it to the same FormData table
-        // $validatedData['password'] = Hash::make($validatedData['password']);
         FormData::create($validatedData);
 
-        // You can customize the redirect or response as needed
         return redirect()->back()->with('success', 'Form submitted successfully! User registered.');
     }
 
     public function register(){
-        // dd('masuk register');
         return view('auth.register', [
             'title' => 'Register',
         ]);
