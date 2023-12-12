@@ -80,7 +80,7 @@
 
     <div class="container">
 
-       <div class="image-container">
+       <div class="image-container">                                                                                                                                                                                    
             <!-- Gambar 1 -->
             <img src="{{ asset('images/element14.png') }}" alt="Gambar 1" style="width: 70%; height: 75%; margin-bottom: 10px; margin-left: -170px; margin-top: -80px;">
 
@@ -96,7 +96,7 @@
 
             <div class="form-section">
                 <!-- Opening form tag with the correct action and method -->
-                <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ route('submit-form') }}">
                     @csrf <!-- CSRF token -->
 
                     <div style="display: flex; justify-content: space-between;">
@@ -165,7 +165,9 @@
                     <button type="submit">Submit</button>
 
                     <!-- Tombol Check -->
-                    <button class="check-button">Check</button>
+                    <button class="check-button">
+                        <a href="/check" style="text-decoration: none; font-color: white;">Check</a>
+                    </button>
                     </div>
 
 

@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
-use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\FormController;
+
+use App\Http\Controllers\Auth\FormControllergetValidationFactory;
 
 
 /*
@@ -23,5 +25,8 @@ Route::get('/', function () {
 Route::get('/', [WelcomeController::class, 'index']);
 
 
-Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
-Route::post('/register', [RegisterController::class, 'register']);
+Route::post('/submit-form', [FormController::class, 'store'])->name('submit-form');
+
+// Registration route should use GET method
+// Route::get('/register', [FormController::class, 'showRegistrationForm'])->name('register');
+Route::get('/register', [FormController::class, 'register'])->name('register');
