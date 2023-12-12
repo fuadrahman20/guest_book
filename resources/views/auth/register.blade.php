@@ -95,10 +95,8 @@
         <div class="form-container">
 
             <div class="form-section">
-                <!-- Opening form tag with the correct action and method -->
                 <form method="POST" action="{{ route('submit-form') }}">
-                    @csrf <!-- CSRF token -->
-
+                    @csrf
                     <div style="display: flex; justify-content: space-between;">
                         <div>
                            <label for="nama">Nama Pendaftar</label>
@@ -111,8 +109,6 @@
                         </div>
                     </div>
 
-
-                    <!-- Form Tanggal Mulai dan Tanggal Selesai -->
                     <div style="display: flex; justify-content: space-between;">
                         <div>
                             <label for="tanggal_mulai">Tanggal Mulai</label>
@@ -124,7 +120,6 @@
                         </div>
                     </div>
 
-                    <!-- Form Domisili -->
                     <label for="domisili">Domisili</label>
                     <select name="domisili" id="domisili">
                     <option value="select">Select</option>
@@ -135,7 +130,6 @@
                     <div style="display: flex; justify-content: space-between;">
 
                         <div>
-                           <!-- Form Tujuan -->
                            <label for="tujuan">Tujuan</label>
                            <select name="tujuan" id="tujuan">
                            <option value="select">Select</option>
@@ -146,25 +140,21 @@
                         </div>
 
                         <div>
-                            <!-- Form Staff (Optional) -->
-                    <label for="staff">Staff (Optional)</label>
-                    <select name="staff" id="staff">
-                        <option value="select">Select</option>
-                        <option value="staff1">Staff 1</option>
-                    </select>
+                            <label for="staff">Staff (Optional)</label>
+                            <select name="staff" id="staff">
+                                <option value="select">Select</option>
+                                <option value="staff1">Staff 1</option>
+                            </select>
                         </div>
                     </div>
 
 
-                    <!-- Form Keterangan -->
                     <label for="keterangan">Keterangan</label>
                     <textarea name="keterangan" id="keterangan" placeholder="Type here..."></textarea>
 
                     <div style="display: flex; justify-content: space-between;">
-                    <!-- Tombol Submit -->
                     <button type="submit">Submit</button>
 
-                    <!-- Tombol Check -->
                     <button class="check-button">
                         <a href="/check" style="text-decoration: none; font-color: white;">Check</a>
                     </button>
