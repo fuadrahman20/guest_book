@@ -156,7 +156,7 @@
                     <button type="submit">Submit</button>
 
                     <button class="check-button">
-                        <a href="/check" style="text-decoration: none; font-color: white;">Check</a>
+                        <a href="/check" style="text-decoration: none; color: white;">Check</a>
                     </button>
                     </div>
 

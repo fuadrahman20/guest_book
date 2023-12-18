@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\Auth\FormController;
+use App\Http\Controllers\Auth\CheckController;
 
 use App\Http\Controllers\Auth\FormControllergetValidationFactory;
 
@@ -28,3 +29,6 @@ Route::get('/', [WelcomeController::class, 'index']);
 Route::post('/submit-form', [FormController::class, 'store'])->name('submit-form');
 
 Route::get('/register', [FormController::class, 'register'])->name('register');
+
+Route::get('/check', [CheckController::class, 'check'])->name('check'); // Memberikan nama rute 'check'
+
