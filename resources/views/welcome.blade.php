@@ -443,19 +443,19 @@ p {
     <div class="row mt-5 mb-5 px-5">
         <!-- Column 1: Nomor Kontak -->
         <div class="col-md-3 ">
-            <h4>Nomor Kontak</h4>
+            <h4 style="font-size: 20px;"><b>Nomor Kontak</b></h4>
             <p>+62 877 2403 9619</p>
         </div>
 
         <!-- Column 2: Alamat -->
         <div class="col-md-3">
-            <h4>Alamat</h4>
+            <h4 style="font-size: 20px; font-weight: bold;">Alamat</h4>
             <p>Jl. Dr. Radjiman No. 6, Pasir Kaliki, Kec. Cicendo, Kota Bandung Jawa Barat 40171</p>
         </div>
 
         <!-- Column 3: Social Media -->
         <div class="col-md-3">
-            <h4>Social Media</h4>
+            <h4 style="font-size: 20px; font-weight: bold;">Social Media</h4>
             <div class="social-media row mt-2 pt-1">
                 <div class="col-1">
                 <i class="bi bi-instagram"></i>
