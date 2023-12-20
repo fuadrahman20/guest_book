@@ -7,7 +7,9 @@ use App\Http\Controllers\Controller;
 
 class CheckController extends Controller
 {
-    public function check(){
-        return view('auth.check');
+    public function index()
+    {
+        // Logika atau data lainnya untuk halaman check
+        return view('auth.check', ['title' => 'Check']);
     }
 }

@@ -112,28 +112,12 @@
             <label for="kode_referensi">Kode Referensi</label>
             <input type="text" id="kode_referensi" placeholder="Ketik di sini..." />
 
-            <button type="submit">Kirim</button>
+            <button type="submit">Submit</button>
         </div>
 
         <img src="{{ asset('images/element15.png') }}" alt="Gambar 1" class="image4">
 
     </div>
-
-
-    
-
-    <form action="" method="post">
-    @csrf
-    <label for="kodeReferral">Masukkan Kode Referral:</label>
-    <input type="text" name="kodeReferral" id="kodeReferral" required>
-    <button type="submit">Verifikasi</button>
-    </form>
-
-    
-
-
-
-
 
 
     <script>
@@ -161,5 +145,8 @@
 
 
     
+
+
 </body>
 </html>
+

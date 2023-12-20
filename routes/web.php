@@ -30,5 +30,4 @@ Route::post('/submit-form', [FormController::class, 'store'])->name('submit-form
 
 Route::get('/register', [FormController::class, 'register'])->name('register');
 
-Route::get('/check', [CheckController::class, 'check'])->name('check'); // Memberikan nama rute 'check'
-
+Route::get('/check', [CheckController::class, 'index'])->name('check');
