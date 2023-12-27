@@ -161,7 +161,7 @@
 
 
                     <label for="keterangan" style="font-family: poppins, sans-serif;">Keterangan</label>
-                    <textarea name="keterangan" id="keterangan" placeholder="Type here..."></textarea>
+                    <textarea style="font-family: poppins, sans-serif;" name="keterangan" id="keterangan" placeholder="Type here..."></textarea>
 
                     <div style="display: flex; justify-content: space-between;">
                     <button type="submit" style="font-family: poppins, sans-serif;">Submit</button>
