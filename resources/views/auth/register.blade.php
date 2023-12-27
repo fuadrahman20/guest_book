@@ -7,6 +7,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Pendaftaran</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -99,68 +110,66 @@
                     @csrf
                     <div style="display: flex; justify-content: space-between;">
                         <div>
-                           <label for="nama">Nama Pendaftar</label>
-                           <input type="text" name="nama" id="nama" placeholder="Type here..." style="background-color: #fff;">
+                           <label for="nama" style="font-family: poppins, sans-serif;">Nama Pendaftar</label>
+                           <input style="font-family: poppins, sans-serif;" type="text" name="nama" id="nama" placeholder="Type here..." style="background-color: #fff;">
                         </div>
 
                         <div>
-                           <label for="jumlah_tamu">Jumlah Tamu</label>
-                           <input type="text" name="jumlah_tamu" id="jumlah_tamu" style="background-color: #fff;">
+                           <label for="jumlah_tamu" style="font-family: poppins, sans-serif;">Jumlah Tamu</label>
+                           <input style="font-family: poppins, sans-serif;" type="text" name="jumlah_tamu" id="jumlah_tamu" style="background-color: #fff;">
                         </div>
                     </div>
 
                     <div style="display: flex; justify-content: space-between;">
                         <div>
-                            <label for="tanggal_mulai">Tanggal Mulai</label>
-                            <input type="date" name="tanggal_mulai" id="tanggal_mulai" placeholder="hh/bb/tttt">
+                            <label for="tanggal_mulai" style="font-family: poppins, sans-serif;">Tanggal Mulai</label>
+                            <input style="font-family: poppins, sans-serif;" type="date" name="tanggal_mulai" id="tanggal_mulai" placeholder="hh/bb/tttt">
                         </div>
                         <div>
-                            <label for="tanggal_selesai">Tanggal Selesai</label>
-                            <input type="date" name="tanggal_selesai" id="tanggal_selesai" placeholder="hh/bb/tttt">
+                            <label for="tanggal_selesai" style="font-family: poppins, sans-serif;">Tanggal Selesai</label>
+                            <input style="font-family: poppins, sans-serif;" type="date" name="tanggal_selesai" id="tanggal_selesai" placeholder="hh/bb/tttt">
                         </div>
                     </div>
 
-                    <label for="domisili">Domisili</label>
+                    <label for="domisili" style="font-family: poppins, sans-serif;">Domisili</label>
                     <select name="domisili" id="domisili">
-                    <option value="select">Select</option>
-                    <option value="dalam_kota">Dalam Kota</option>
-                    <option value="luar_kota">Luar Kota</option>
+                    <option value="select" style="font-family: poppins, sans-serif;">Select</option>
+                    <option value="dalam_kota" style="font-family: poppins, sans-serif;">Dalam Kota</option>
+                    <option value="luar_kota" style="font-family: poppins, sans-serif;">Luar Kota</option>
                     </select>
 
                     <div style="display: flex; justify-content: space-between;">
 
                         <div>
-                           <label for="tujuan">Tujuan</label>
+                           <label for="tujuan" style="font-family: poppins, sans-serif;">Tujuan</label>
                            <select name="tujuan" id="tujuan">
-                           <option value="select">Select</option>
-                           <option value="kunjungan_industri">Kunjungan Industri</option>
-                           <option value="kunjungan_kedinasan">Kunjungan Kedinasan</option>
-                           <option value="lainnya">Lainnya</option>
+                           <option value="select" style="font-family: poppins, sans-serif;">Select</option>
+                           <option value="kunjungan_industri" style="font-family: poppins, sans-serif;">Kunjungan Industri</option>
+                           <option value="kunjungan_kedinasan" style="font-family: poppins, sans-serif;">Kunjungan Kedinasan</option>
+                           <option value="lainnya" style="font-family: poppins, sans-serif;">Lainnya</option>
                            </select>
                         </div>
 
                         <div>
-                            <label for="staff">Staff (Optional)</label>
+                            <label for="staff" style="font-family: poppins, sans-serif;">Staff (Optional)</label>
                             <select name="staff" id="staff">
-                                <option value="select">Select</option>
-                                <option value="staff1">Staff 1</option>
+                                <option value="select" style="font-family: poppins, sans-serif;">Select</option>
+                                <option value="staff1" style="font-family: poppins, sans-serif;">Staff 1</option>
                             </select>
                         </div>
                     </div>
 
 
-                    <label for="keterangan">Keterangan</label>
+                    <label for="keterangan" style="font-family: poppins, sans-serif;">Keterangan</label>
                     <textarea name="keterangan" id="keterangan" placeholder="Type here..."></textarea>
 
                     <div style="display: flex; justify-content: space-between;">
-                    <button type="submit">Submit</button>
+                    <button type="submit" style="font-family: poppins, sans-serif;">Submit</button>
 
                     <button class="check-button">
-                        <a href="{{ route('check') }}" style="text-decoration: none; color: white;">Check</a>
+                        <a href="{{ route('check') }}" style="text-decoration: none; color: white; font-family: poppins, sans-serif;">Check</a>
                     </button>
                     </div>
-
-
                 </form>
             
 

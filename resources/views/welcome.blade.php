@@ -11,9 +11,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -174,7 +174,7 @@ p {
       max-width: 50%;
       width: 90px;
       height: auto;
-      margin-right: 900px;
+      margin-right: 1100px;
     }
 
     .centered-image {
@@ -207,12 +207,13 @@ p {
     .konten-gambar {
       max-width: 13%;
       height: auto;
-      margin: 20px;
+      
       position: relative;
       margin-right: 1290px;
       margin-top: 2px;
       z-index: 1;
       margin-bottom: -400px;
+     
     }
     
 
@@ -224,7 +225,7 @@ p {
       left: 0;
       z-index: 1; /* Untuk memastikan gambar2 tampil di depan */
       margin-top: 1225px;
-      margin-left: 990px;
+      margin-left: 78%;
     }
 
     .gambar-konten3 {
@@ -235,6 +236,7 @@ p {
   margin-top: -100px; /* Sesuaikan nilai negatif ini untuk mengatur jarak dari atas */
   margin-bottom: 10px; /* Sesuaikan nilai positif ini untuk mengatur jarak dari bawah */
   z-index: 2;
+  margin-left: 4%;
 }
 
 .box-container {
@@ -340,19 +342,19 @@ p {
 <div class="flex">
   <div class="custom-background">
     <div class="container">
-    <div class="font-semibold grid content-center text-left md:text-left col-span-5 md:col-span-3">
+    <div class="grid content-center text-left md:text-left col-span-5 md:col-span-3" style="font-family: poppins, sans-serif; font-weight: 600;">
            <div class="text-7xl md:text-xl mb-2 text-black">
-             <h1>Selamat Datang Di</h1>
+             <h1 style="font-size: 40px;">Selamat Datang Di</h1>
            </div>
 
-          <div class="text-2xl mt-2 text-black font-medium">
+          <div class="text-2xl mt-2 text-black" style="font-size: 14px;">
             <h2>
               <span>BALAI TIKOMDIK </span>
               <span class="text-[#102785] font-semibold"><u>Jawa Barat</u></span>
             </h2>
-           </div>
+          </div>
            
-           <div class="my-3 w-full md:w-35 mx-auto text-slate-400 font-medium text-center md:text-left">
+           <div class="my-3 w-full md:w-35 mx-auto text-slate-400 font-medium text-center md:text-left" style="font-size: 13px;">
              <p>
               TIKomDik UPTD TIKOMDIK (Teknologi Informasi dan Komunikasi Pendidikan) Dinas Pendidikan Provinsi Jawa Barat.
              </p>
@@ -360,7 +362,7 @@ p {
 
            <br>
 
-           <div class="flex justify-center md:justify-end mt-8">
+           <div class="flex justify-center md:justify-end mt-8" style="font-size: 14px;">
             
             <a class="custom-button" href="/register">Mulai daftar</a>
            </div>
@@ -378,7 +380,7 @@ p {
 </div>
 
 <div class="image-container hidden md:block ml-8">
-    <img src="{{ asset('images/element1.png') }}" alt="Gambar Kanan" style="max-width: 50%; height: 100px; margin-left: 1098px; margin-top: 0.5px;"><!--h 540px margin-left 962px-->
+    <img src="{{ asset('images/element1.png') }}" alt="Gambar Kanan" style="max-width: 50%; height: 100px; margin-left: 1190px; margin-top: 0.5px;"><!--h 540px margin-left 962px-->
 </div>
 <br>
 <br>
@@ -386,8 +388,8 @@ p {
 <!--Content2-->
 
 <div class="custom-container">
-    <div class="text-container">
-    <p><span style="color: black;">Bagaimana Cara</span><span style="color: #102785;"> Penggunaannya</span>?</p>
+    <div class="text-container" style="font-family: poppins, sans-serif;">
+    <p><span style="color: black; font-weight: 700;">Bagaimana Cara</span><span style="color: #102785;"> Penggunaannya</span>?</p>
 
       <img class="gambar-konten" src="{{ asset('images/element2.png') }}" alt="Gambar Kiri">
 
